@@ -1,7 +1,8 @@
 //parallax.js
 var parallaxGyro = function () {
     var scene = document.getElementById('scene');
-    var parallaxInstance = new Parallax(scene, {
+    // var parallaxInstance = 
+    new Parallax(scene, {
         clipRelativeInput: true, //要素の端にカーソルが達したら動きを止める
         hoverOnly: true, //カーソルが要素の上にある場合のみ有効
         invertX: true, //X軸の動きを反転。falseにするとマウスと同じ方向に動く
@@ -12,10 +13,13 @@ var parallaxGyro = function () {
         scalarY: 10.0, //Y軸の移動速度と範囲を増減
         frictionX: .1, //X軸のレイヤーの速度。0.00〜1.00の範囲内で指定可能
         frictionY: .1, //Y軸のレイヤーの速度。0.00〜1.00の範囲内で指定可能
-        originX: 0, //X軸のマウスの初期位置。デフォルトの0.5は画面または要素の中心
-        originY: 0, //Y軸マウスの初期位置。デフォルトの0.5は画面または要素の中心
+        originX: 0.5, //X軸のマウスの初期位置。デフォルトの0.5は画面または要素の中心
+        originY: 0.5, //Y軸マウスの初期位置。デフォルトの0.5は画面または要素の中心
     });
+    new Parallax($(".scene2").get(0));
 }
+
+
  
 // ジャイロセンサーの有無確認
 var isGyro = false;
