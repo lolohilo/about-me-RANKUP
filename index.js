@@ -17,6 +17,9 @@ var parallaxGyro = function () {
         originY: 0.5, //Y軸マウスの初期位置。デフォルトの0.5は画面または要素の中心
     });
     new Parallax($(".scene2").get(0));
+    new Parallax($(".scene3").get(0));
+    new Parallax($(".scene4").get(0));
+
 }
 
 

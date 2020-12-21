@@ -128,12 +128,13 @@ li.fade {
     display: block;
     height: 10px;
     border: 1px solid var(--black);
-    border-radius: 50%;
     width: 10px;
+    transition: all 1s ease;
 }
 
 .pagenation a.active{
     background: var(--black);
+    transform: rotate(315deg);
     transition: all 1s ease;
 }
 
@@ -204,7 +205,7 @@ li.fade {
     font-family: Montserrat, sans-serif;
     padding: 0;
     margin: 0;
-    color: var(--black);
+    color: rgb(59, 59, 59);
 }
 
 .logo-box{
@@ -250,6 +251,8 @@ li.fade {
     height: 100vh;
     width: 100%;
     background-color: var(--white);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .scene2{
@@ -272,18 +275,19 @@ li.fade {
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 50vh 0 0 120vw;
+    border-width: 50vh 0 0 130vw;
     border-color: transparent transparent transparent var(--yellow);
     position: absolute !important;
     top: 55vh !important;
-    left: -10vw !important;
+    left: -15vw !important;
 }
 
 .about-me-img-box{
     width: 75vw;
     height: 75vw;
-    background-image: url(img/aboutme.jpg);
-    background-size: contain;
+    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/aboutmepicture.JPG);
+    /* background-image: url(img/aboutme.jpg); */
+    background-size: cover;
     background-position: 50% 50%;
     background-repeat: none;
     position: absolute !important;
@@ -300,17 +304,114 @@ li.fade {
 
 
 
-
-
-
-
-
-.contact{
-    height: 100vh;
-    background-color: var(--yellow);
-}
-
+/* gallery */
 .gallery{
     height: 100vh;
-    background-color: var(--white);
+    background-color: var(--yellow);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+.scene3{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.white-line{
+    width: 200vw;
+    height: 30px;
+    background-color: var(--white);
+    transform: rotate(-15deg) !important;
+    position: absolute !important;
+    top: 80vh !important;
+    left: -20vw !important;
+}
+
+.white-line2{
+    width: 220vw;
+    height: 30px;
+    background-color: var(--white);
+    transform: rotate(55deg) !important;
+    position: absolute !important;
+    top: 50vh !important;
+    left: -65vw !important;
+}
+
+.black-box3{
+    height: 30vw;
+    width: 30vw;
+    background-color: var(--black);
+    position: absolute !important;
+    top: 20vh !important;
+    left: 65vw !important;
+    z-index: 1;
+}
+
+.gallery-img-box{
+    width: 75vw;
+    height: 75vw;
+    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/gallerypicture.jpg);
+    /* background-image: url(img/aboutme.jpg); */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    position: absolute !important;
+    top: 25vh !important;
+    left: 12.5vw !important;
+    z-index: 5;
+}
+
+
+
+
+/* contact */
+.contact{
+    height: 100vh;
+    background-color: var(--white);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.scene4{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.black-box4{
+    height: 30vw;
+    width:20vw;
+    background-color: var(--black);
+    position: absolute !important;
+    top: 50vh !important;
+    left: 5vw !important;
+    z-index: 1;
+}
+
+.yellow-tri2{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 130vw 50vh 0;
+    border-color: transparent var(--yellow) transparent transparent;
+    position: absolute !important;
+    top: -5vh !important;
+    left: -15vw !important;
+    z-index: -1;
+}
+
+.gallery-img-box{
+    width: 75vw;
+    height: 75vw;
+    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/gallerypicture.jpg);
+    /* background-image: url(img/aboutme.jpg); */
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    position: absolute !important;
+    top: 25vh !important;
+    left: 12.5vw !important;
+    z-index: 5;
+}
+
