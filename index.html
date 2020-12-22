@@ -11,7 +11,15 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
     <title>Hiroto Sakai</title>
 </head>
-<body>
+<body data-barba="wrapper">
+
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
 
 
     <nav>
@@ -21,75 +29,78 @@
             <div class="line bottom-line"></div>
         </div>
         <ul class="nav-links">
-            <li><a href="#">top</a></li>
-            <li><a href="#">contact</a></li>
+            <li><a href="index.html">top</a></li>
+            <li><a href="contact.html">contact</a></li>
             <li><a href="#">about me</a></li>
             <li><a href="#">gallery</a></li>
         </ul>
     </nav>
 
-
-    <div class="top scrollify">
-        <div id="scene" class="scene1">
-            <div data-depth="0.10" class="layer black-box"></div>
-            <div data-depth="0.10" class="layer white-tri"></div>
-            <div data-depth="0.20" class="layer logo-box">
-                <h1>RANKUP</h1>
-            </div>
-            <div data-depth="0.30" class="layer profile-box"></div>
-            <div data-depth="0.50" class="layer subtitle-box">
-                <p>snowboarder/</p>
-                <p>programer</p>
-            </div>
-            <div data-depth="0.70" class="layer name-box">
-                <h1>HIROTO</h1>
-                <h1 class="indent">SAKAI</h1>
-            </div>
-        </div>
-    </div>
-    <div class="about scrollify">
-        <div class="scene2">
-            <div data-depth="0.10" class="layer black-box2"></div>
-            <div data-depth="0.10" class="layer yellow-tri"></div>
-            <div data-depth="0.30" class="layer about-me-img-box"></div>
-            <div data-depth="0.50" class="layer subtitle-box">
-                <p>画像をタップ</p>
-                <p>22 years of my life</p>
-            </div>
-            <div data-depth="0.70" class="layer name-box">
-                <h1>ABOUT</h1>
-                <h1 class="indent2">ME</h1>
+    <main data-barba="container" data-barba-namespace="home">
+        <div class="top scrollify">
+            <div id="scene" class="scene1">
+                <div data-depth="0.10" class="layer black-box"></div>
+                <div data-depth="0.10" class="layer white-tri"></div>
+                <div data-depth="0.20" class="layer logo-box">
+                    <h1>RANKUP</h1>
+                </div>
+                <div data-depth="0.30" class="layer profile-box"></div>
+                <div data-depth="0.50" class="layer subtitle-box">
+                    <p>snowboarder/</p>
+                    <p>programer</p>
+                </div>
+                <div data-depth="0.70" class="layer name-box">
+                    <h1>HIROTO</h1>
+                    <h1 class="indent">SAKAI</h1>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="gallery scrollify">
-        <div class="scene3">
-            <div data-depth="0.00" class="layer white-line"></div>
-            <div data-depth="0.00" class="layer white-line2"></div>
-            <div data-depth="0.10" class="layer black-box3"></div>
-            <div data-depth="0.30" class="layer gallery-img-box"></div>
-            <div data-depth="0.50" class="layer subtitle-box">
-                <p>画像をタップ</p>
-            </div>
-            <div data-depth="0.70" class="layer name-box">
-                <h1>GALLERY</h1>
-            </div>
-        </div>
-    </div>
-    <div class="contact scrollify">
-        <div class="scene4">
-            <div data-depth="0.10" class="layer black-box4"></div>
-            <div data-depth="0.10" class="layer yellow-tri2"></div>
-            <div data-depth="0.30" class="layer contact-img-box"></div>
-            <div data-depth="0.50" class="layer subtitle-box">
-                <p>画像をタップ</p>
-            </div>
-            <div data-depth="0.70" class="layer name-box">
-                <h1>KEEP IN</h1>
-                <h1 class="indent">TOUCH</h1>
+        <div class="about scrollify">
+            <div class="scene2">
+                <div data-depth="0.10" class="layer black-box2"></div>
+                <div data-depth="0.10" class="layer yellow-tri"></div>
+                <div data-depth="0.30" class="layer about-me-img-box"></div>
+                <div data-depth="0.50" class="layer subtitle-box">
+                    <p>画像をタップ</p>
+                    <p>22 years of my life</p>
+                </div>
+                <div data-depth="0.70" class="layer name-box">
+                    <h1>ABOUT</h1>
+                    <h1 class="indent2">ME</h1>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="gallery scrollify">
+            <div class="scene3">
+                <div data-depth="0.00" class="layer white-line"></div>
+                <div data-depth="0.00" class="layer white-line2"></div>
+                <div data-depth="0.10" class="layer black-box3"></div>
+                <div data-depth="0.30" class="layer gallery-img-box"></div>
+                <div data-depth="0.50" class="layer subtitle-box">
+                    <p>画像をタップ</p>
+                </div>
+                <div data-depth="0.70" class="layer name-box">
+                    <h1>GALLERY</h1>
+                </div>
+            </div>
+        </div>
+        <div class="contact scrollify">
+            <div class="scene4">
+                <div data-depth="0.10" class="layer black-box4"></div>
+                <div data-depth="0.10" class="layer yellow-tri2"></div>
+                <a href="contact.html" data-depth="0.30" class="layer contact-img-box">
+                    <!-- <div data-depth="0.30" class="layer contact-img-box"></div> -->
+                </a>
+                <div data-depth="0.50" class="layer subtitle-box">
+                    <p>画像をタップ</p>
+                </div>
+                <div data-depth="0.70" class="layer name-box">
+                    <h1>KEEP IN</h1>
+                    <h1 class="indent">TOUCH</h1>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
     <!-- parallax.js を携帯対応する場合に必要 -->

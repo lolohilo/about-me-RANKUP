@@ -14,6 +14,26 @@ body{
 font-family: 'Montserrat', sans-serif; */
 
 
+/* page transition */
+.transition{
+    display: flex;
+    position: absolute;
+    z-index: 40;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0;
+    pointer-events: none;
+}
+
+.transition li{
+    transform: scaleY(0);
+    background-color: var(--yellow);
+    width: 20%;
+}
+
+
 
 /* navigator */
 nav{
@@ -47,7 +67,7 @@ nav{
     cursor: pointer;
     right: 5vw !important;
     top: 5vh;
-    z-index: 91;
+    z-index: 31;
 }
 
 .nav-links{
@@ -66,7 +86,7 @@ nav{
     clip-path: polygon(85% 8%, 85% 8%, 85% 8%, 85% 8%);
     -webkit-clip-path: polygon(85% 8%, 85% 8%, 85% 8%, 85% 8%);
     transition: all 1s ease-out;
-    z-index: 90;
+    z-index: 30;
     pointer-events: none;
 }
 
@@ -115,7 +135,7 @@ li.fade {
     position: fixed;
     right: 5vw;
     bottom: 0vh;
-    z-index: 50;
+    z-index: 20;
 }
 
 .pagenation li{
@@ -412,5 +432,6 @@ li.fade {
     top: 25vh !important;
     left: 12.5vw !important;
     z-index: 5;
+    pointer-events: auto;
 }
 
