@@ -63,9 +63,8 @@ nav{
     justify-content: space-around;
     align-items: center;
     margin-left: auto;
-    clip-path: polygon(85% 5%, 85% 5%, 85% 5%, 85% 5%);
-    /* 100% 0%, 100% 0%, 100% 0%, 100% 0% */
-    -webkit-clip-path: polygon(85% 5%, 85% 5%, 85% 5%, 85% 5%);
+    clip-path: polygon(85% 8%, 85% 8%, 85% 8%, 85% 8%);
+    -webkit-clip-path: polygon(85% 8%, 85% 8%, 85% 8%, 85% 8%);
     transition: all 1s ease-out;
     z-index: 90;
     pointer-events: none;
@@ -285,7 +284,7 @@ li.fade {
 .about-me-img-box{
     width: 75vw;
     height: 75vw;
-    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/aboutmepicture.JPG);
+    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/aboutmepicture.jpg);
     /* background-image: url(img/aboutme.jpg); */
     background-size: cover;
     background-position: 50% 50%;
@@ -380,11 +379,11 @@ li.fade {
 }
 
 .black-box4{
-    height: 30vw;
+    height: 45vw;
     width:20vw;
     background-color: var(--black);
     position: absolute !important;
-    top: 50vh !important;
+    top: 45vh !important;
     left: 5vw !important;
     z-index: 1;
 }
@@ -401,10 +400,10 @@ li.fade {
     z-index: -1;
 }
 
-.gallery-img-box{
+.contact-img-box{
     width: 75vw;
     height: 75vw;
-    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/gallerypicture.jpg);
+    background: linear-gradient(to top, rgba(253, 240, 80, 0.4) 0%, rgba(0, 153, 255, 0.4) 100%), url(img/keepintouchpicture.jpg);
     /* background-image: url(img/aboutme.jpg); */
     background-size: cover;
     background-position: 50% 50%;
