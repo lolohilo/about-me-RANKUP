@@ -84,6 +84,8 @@ $.scrollify({
     section:".scrollify",
     setHeights:false,
     scrollbars:false,
+    updateHash:false,
+    scrollSpeed:800,
     before:function(i,box){
         current = i
         $('.pagenation .active').removeClass('active');
@@ -102,7 +104,21 @@ $.scrollify({
             });
         });
         $('.pagenation li:first-child').find('a').addClass('active');
-    },      
+    },
+    afterMove:function(){
+        var pagenation = '<ul class="pagenation">';
+        $('.scrollify').each(function(i){
+            pagenation += '<li><a></a></li>';
+        });
+        pagenation += '</ul>';
+        $('body').append(pagenation);
+        $('.pagenation a').each(function(i){
+            $(this).on('click',function(){
+                $.scrollify.move(i);
+            });
+        });
+        $('.pagenation li:first-child').find('a').addClass('active');
+    },
 });
 $(window).on('resize',function(){
     if(current){
