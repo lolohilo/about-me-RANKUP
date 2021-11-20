@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery-scrollify@1/jquery.scrollify.min.js"></script>
     <title>Hiroto Sakai</title>
@@ -47,9 +47,22 @@
             <li class="instagram"><a href="https://www.instagram.com/hiloto_sakai/">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
             </a></li>
-
         </ul>
-
+        <form class="mail-box">
+            <div class="input-box">
+              <input type="text" id="name" required="required"/>
+              <label for="name">Name</label>
+            </div>
+            <div class="input-box">
+              <input type="email" id="email" required="required"/>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-box">
+              <textarea id="message" required="required"></textarea>
+              <label for="message">Your Message</label>
+            </div>
+            <button value="submit">SEND</button>
+        </form>
     </main>
     
 
