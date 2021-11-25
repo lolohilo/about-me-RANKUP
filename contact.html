@@ -64,6 +64,116 @@
             <button value="submit">SEND</button>
         </form>
     </main>
+
+    <style>
+        .mail-box{
+        margin: 0 auto;
+        background: var(--white);
+        width: 80vw;
+        /* height: 65vh; */
+        border-radius: 3px;
+        /* box-shadow: 0 3px 36px 0 rgba(0, 0, 0, 0.6); */
+        overflow: hidden;
+        }
+
+        .input-box{
+            width: 250px;
+            margin: auto;
+            position: relative;
+        }
+
+        label {
+            position: absolute;
+            top: 7px;
+            left: 3%;
+            font: 16px 'Montserrat', sans-serif;
+            color: #A9A9A9;
+            cursor: text;
+            transition: 0.3s;
+        }
+
+        input {
+            background: linear-gradient(to bottom, transparent 92%, var(--black) 8%) no-repeat;
+            background-position: -300px 0;
+            background-size: 300px 100%;
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            margin-top: 30px;
+            border: none;
+            border-bottom: solid 1px var(--black);
+            font-size: 16px;
+            transition: all 0.3s;
+        }
+        input:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px rgb(253, 248, 189) inset;
+        }
+        input:focus, input:valid {
+            background-position: 0 0;
+            background-color: rgb(253, 248, 189);
+            outline: none;
+        }
+        input:focus ~ label, input:valid ~ label {
+            top: -15px;
+            left: 0;
+            color: var(--black);
+            font: 400 12px 'Montserrat';
+        }
+
+        textarea, textarea:focus {
+            background: #F9F9F9;
+            width: 90%;
+            height: 20vh;
+            padding: 9px;
+            margin-top: 30px;
+            border: 1px solid var(--black);
+            outline: none;
+            font: 400 15px 'montserrat';
+            resize: none;
+        }
+        textarea:focus, textarea:valid, textarea:focus:focus, textarea:focus:valid {
+            padding: 7px;
+            background-color: rgb(253, 248, 189);
+            border: 3px solid var(--black);
+        }
+        textarea:focus ~ label, textarea:valid ~ label, textarea:focus:focus ~ label, textarea:focus:valid ~ label {
+            top: 12px;
+            left: 0;
+            color: var(--black);
+            font: 400 12px 'Montserrat';
+        }
+        textarea ~ label, textarea:focus ~ label {
+            top: 35px;
+            left: 7px;
+        }
+
+        button {
+            display: block;
+            background-color: var(--yellow);
+            width: 80%;
+            height: 40px;
+            margin: 30px auto 30px auto;
+            border: 2px solid var(--black);
+            border-radius: 3px;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+            color: var(--black);
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        button:hover {
+            box-shadow: 0 6px 6px 0 rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        button:active{
+            content: "sent";
+        }
+
+        ::selection {
+            background: var(--black);
+            color: var(--white);
+        }
+    </style>
     
 
 

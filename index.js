@@ -126,3 +126,30 @@ $(window).on('resize',function(){
         $(window).scrollTop(currentScrl);
     }
 });
+
+const modalButtons = document.querySelectorAll(".open_modal")
+
+$(function () {
+    modalButtons.forEach(modalButton => {
+        modalButton.addEventListener('click', () => {
+            $('#modalArea').fadeIn();
+        });
+        $('#aboutModalButton').click(function(){
+            $('#aboutModalContent').fadeIn();
+        });
+        $('#galleryModalButton').click(function(){
+            $('#galleryModalContent').fadeIn();
+        });
+        $('#contactModalButton').click(function(){
+            $('#contactModalContent').fadeIn();
+        });
+    });
+
+
+    $('#closeModal , #modalBg').click(function(){
+        $('#modalArea').fadeOut();
+        $('#aboutModalContent').fadeOut();
+        $('#galleryModalContent').fadeOut();
+        $('#contactModalContent').fadeOut();
+    });
+});
